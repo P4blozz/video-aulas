@@ -1,19 +1,498 @@
-<!DOCTYPE html="pt-BR">
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Vídeo Aula</title>
-    </head>
-    <body>
-        <header>
-            <!-- Adicionar a barra de menu -->
-        </header>
-        <main>
-            <!-- Adicionar quadro cards dentro de um container -->
-            <!-- Esteja atento a distância entre os cards, o capricho faz parte do desenvolvimento -->
-        </main>
-        <footer>
-            <!-- Adicionar informações relevantes como: Um formulário para Newsletter , links úteis, redes sociais etc -->
-        </footer>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Hope</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV-BAR -->
+    <header class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <a href="logo.html" class="text-white logo d-block mx-auto">
+          <img
+            src="imagens/Logo Natal.png"
+            height="100px"
+            alt="logo"/>
+        </a>
+      </div>
+    </header>
+    <nav class="bg-light py-2">
+      <ul class="nav justify-content-center mb-0">
+        <li class="nav-item">
+          <a href="catalogo.html" class="nav-link text-dark font-navbar"
+            ><strong>Catálogo</strong></a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="favoritos.html" class="nav-link text-dark font-navbar"
+            ><i class="bi bi-heart-fill"></i>Favoritos</a
+          >
+        </li>
+      </ul>
+    </nav>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- CARD DO PRODUTO 1 -->
+    <section class="container my-5">
+      <div class="row">
+        <!-- Produto 1 -->
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <!-- Carrossel de Imagens para o Produto 1 -->
+            <div
+              id="carouselProduto1"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <!-- Imagem 1 -->
+                <div class="carousel-item active">
+                  <img
+                    src="imagens/frente.webp"
+                    class="d-block w-100"
+                    alt="Camiseta Chronic 4013"
+                  />
+                </div>
+                <!-- Imagem 2 -->
+                <div class="carousel-item">
+                  <img
+                    src="imagens/costas.webp"
+                    class="d-block w-100"
+                    alt="Camiseta Chronic 4013"
+                  />
+                </div>
+              </div>
+              <!-- Controles do Carrossel -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselProduto1"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselProduto1"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Próximo</span>
+              </button>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Camiseta Chronic 4013</h5>
+              <p class="card-text">REF.: 100994018</p>
+
+   <!-- Tamanho disponível -->
+   <p class="text-muted">Tamanho disponível: <strong>G</strong></p>
+
+                <!-- Botão de Comprar -->
+                <button class="btn btn-dark" onclick="sendMessage()">
+                  Comprar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+        <!-- CARD DO PRODUTO 2 -->
+    <section class="container my-5">
+      <div class="row">
+        <!-- Produto 1 -->
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <!-- Carrossel de Imagens para o Produto 1 -->
+            <div
+              id="carouselProduto1"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <!-- Imagem 1 -->
+                <div class="carousel-item active">
+                  <img
+                    src="imagens/frente.webp"
+                    class="d-block w-100"
+                    alt="Camiseta Chronic 4013"
+                  />
+                </div>
+                <!-- Imagem 2 -->
+                <div class="carousel-item">
+                  <img
+                    src="imagens/costas.webp"
+                    class="d-block w-100"
+                    alt="Camiseta Chronic 4013"
+                  />
+                </div>
+              </div>
+              <!-- Controles do Carrossel -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselProduto1"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselProduto1"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Próximo</span>
+              </button>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Camiseta Chronic 4013</h5>
+              <p class="card-text">REF.: 100994018</p>
+
+   <!-- Tamanho disponível -->
+   <p class="text-muted">Tamanho disponível: <strong>G</strong></p>
+
+                <!-- Botão de Comprar -->
+                <button class="btn btn-dark" onclick="sendMessage()">
+                  Comprar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <!-- CARD DO PRODUTO 3 -->
+        <section class="container my-5">
+          <div class="row">
+            <!-- Produto 1 -->
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <!-- Carrossel de Imagens para o Produto 1 -->
+                <div
+                  id="carouselProduto1"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <!-- Imagem 1 -->
+                    <div class="carousel-item active">
+                      <img
+                        src="imagens/frente.webp"
+                        class="d-block w-100"
+                        alt="Camiseta Chronic 4013"
+                      />
+                    </div>
+                    <!-- Imagem 2 -->
+                    <div class="carousel-item">
+                      <img
+                        src="imagens/costas.webp"
+                        class="d-block w-100"
+                        alt="Camiseta Chronic 4013"
+                      />
+                    </div>
+                  </div>
+                  <!-- Controles do Carrossel -->
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselProduto1"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselProduto1"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Próximo</span>
+                  </button>
+                </div>
+    
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta Chronic 4013</h5>
+                  <p class="card-text">REF.: 100994018</p>
+    
+       <!-- Tamanho disponível -->
+       <p class="text-muted">Tamanho disponível: <strong>G</strong></p>
+    
+                    <!-- Botão de Comprar -->
+                    <button class="btn btn-dark" onclick="sendMessage()">
+                      Comprar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- CARD DO PRODUTO 4 -->
+    <section class="container my-5">
+      <div class="row">
+        <!-- Produto 1 -->
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <!-- Carrossel de Imagens para o Produto 1 -->
+            <div
+              id="carouselProduto1"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <!-- Imagem 1 -->
+                <div class="carousel-item active">
+                  <img
+                    src="imagens/frente.webp"
+                    class="d-block w-100"
+                    alt="Camiseta Chronic 4013"
+                  />
+                </div>
+                <!-- Imagem 2 -->
+                <div class="carousel-item">
+                  <img
+                    src="imagens/costas.webp"
+                    class="d-block w-100"
+                    alt="Camiseta Chronic 4013"
+                  />
+                </div>
+              </div>
+              <!-- Controles do Carrossel -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselProduto1"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselProduto1"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Próximo</span>
+              </button>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Camiseta Chronic 4013</h5>
+              <p class="card-text">REF.: 100994018</p>
+
+   <!-- Tamanho disponível -->
+   <p class="text-muted">Tamanho disponível: <strong>G</strong></p>
+
+                <!-- Botão de Comprar -->
+                <button class="btn btn-dark" onclick="sendMessage()">
+                  Comprar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+        <!-- CARD DO PRODUTO 5 -->
+    <section class="container my-5">
+      <div class="row">
+        <!-- Produto 1 -->
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <!-- Carrossel de Imagens para o Produto 1 -->
+            <div
+              id="carouselProduto1"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <!-- Imagem 1 -->
+                <div class="carousel-item active">
+                  <img
+                    src="imagens/frente.webp"
+                    class="d-block w-100"
+                    alt="Camiseta Chronic 4013"
+                  />
+                </div>
+                <!-- Imagem 2 -->
+                <div class="carousel-item">
+                  <img
+                    src="imagens/costas.webp"
+                    class="d-block w-100"
+                    alt="Camiseta Chronic 4013"
+                  />
+                </div>
+              </div>
+              <!-- Controles do Carrossel -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselProduto1"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselProduto1"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Próximo</span>
+              </button>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Camiseta Chronic 4013</h5>
+              <p class="card-text">REF.: 100994018</p>
+
+   <!-- Tamanho disponível -->
+   <p class="text-muted">Tamanho disponível: <strong>G</strong></p>
+
+                <!-- Botão de Comprar -->
+                <button class="btn btn-dark" onclick="sendMessage()">
+                  Comprar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <!-- CARD DO PRODUTO 6 -->
+        <section class="container my-5">
+          <div class="row">
+            <!-- Produto 1 -->
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <!-- Carrossel de Imagens para o Produto 1 -->
+                <div
+                  id="carouselProduto1"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <!-- Imagem 1 -->
+                    <div class="carousel-item active">
+                      <img
+                        src="imagens/frente.webp"
+                        class="d-block w-100"
+                        alt="Camiseta Chronic 4013"
+                      />
+                    </div>
+                    <!-- Imagem 2 -->
+                    <div class="carousel-item">
+                      <img
+                        src="imagens/costas.webp"
+                        class="d-block w-100"
+                        alt="Camiseta Chronic 4013"
+                      />
+                    </div>
+                  </div>
+                  <!-- Controles do Carrossel -->
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselProduto1"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselProduto1"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Próximo</span>
+                  </button>
+                </div>
+    
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta Chronic 4013</h5>
+                  <p class="card-text">REF.: 100994018</p>
+    
+       <!-- Tamanho disponível -->
+       <p class="text-muted">Tamanho disponível: <strong>G</strong></p>
+    
+                    <!-- Botão de Comprar -->
+                    <button class="btn btn-dark" onclick="sendMessage()">
+                      Comprar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+<!-- JAVA-SCRIPT -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
